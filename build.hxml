@@ -1,0 +1,20 @@
+
+-cmd rm -rf bin
+
+--next
+
+#-dce full
+-cp src
+-main Main
+-php bin
+-D php7
+-D real-position
+-D php-prefix=RodzetaSiteoptions
+
+# build module
+-cmd rm bin/index.php
+-cmd composer -o dump-autoload
+#-cmd bitrix-copy-deps onefile
+#-cmd cp -R install .outputwww/install
+#-cmd cp -R lang .outputwww/lang
+#-cmd cp include.php .outputwww/include.php

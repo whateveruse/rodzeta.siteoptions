@@ -1,0 +1,8 @@
+/bin/
+/out/
+/vendor/
+/*.iml
+/*.geany
+/.last_version/
+/src/frontend/.out.js
+/.outputwww/
